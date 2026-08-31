@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment Booking</title>
+</head>
+
+<body>
+
+<h1>Appointment Booking</h1>
+
+<p>
+    Please fill in the following form to request an appointment at the clinic.
+</p>
+
+<h2>Patient Information</h2>
+
+<form>
+
+    <label for="name">Patient Name:</label>
+    <input type="text" id="name" name="patientname"
+           minlength="3" maxlength="50" required>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" name="mobile"
+           pattern="[0-9]{10}" required>
+    <br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+    <br><br>
+
+    <h2>Appointment Preferences</h2>
+
+    <label for="appointmentdate">Appointment Date:</label>
+    <input type="date" id="appointmentdate" name="appointmentdate"
+           min="2026-08-31" max="2026-12-31" required>
+    <br><br>
+
+    <label for="appointmenttime">Appointment Time:</label>
+    <input type="time" id="appointmenttime" name="appointmenttime"
+           min="09:00" max="18:00" required>
+    <br><br>
+
+    <label for="doctor">Select Doctor:</label>
+    <select id="doctor" name="doctor" required>
+        <option value="dr_arjun_mehta">Dr. Arjun Mehta - Cardiology</option>
+        <option value="dr_neha_sharma">Dr. Neha Sharma - Dermatology</option>
+        <option value="dr_rohan_verma">Dr. Rohan Verma - Orthopedics</option>
+        <option value="dr_pooja_gupta">Dr. Pooja Gupta - Pediatrics</option>
+        <option value="dr_amit_kapoor">Dr. Amit Kapoor - General Medicine</option>
+    </select>
+
+    <br><br>
+
+    <label>Visit Type:</label>
+
+    <input type="radio" id="newpatient" name="visittype" value="new_patient" required>
+    <label for="newpatient">New Patient</label>
+
+    <input type="radio" id="followup" name="visittype" value="follow_up">
+    <label for="followup">Follow-up</label>
+
+    <input type="radio" id="consultation" name="visittype" value="consultation">
+    <label for="consultation">Consultation</label>
+
+    <input type="radio" id="emergency" name="visittype" value="emergency">
+    <label for="emergency">Emergency</label>
+
+    <br><br>
+
+    <label>Preferred Communication Method:</label>
+
+    <input type="radio" id="emailcommunication"
+           name="communication" value="email" required>
+    <label for="emailcommunication">Email</label>
+
+    <input type="radio" id="mobilecommunication"
+           name="communication" value="mobile">
+    <label for="mobilecommunication">Mobile</label>
+
+    <br><br>
+
+    <h2>Visit Details</h2>
+
+    <label for="reason">Reason for Visit/Additional Information:</label><br>
+    <textarea id="reason" name="reason"
+              minlength="5" maxlength="300" required></textarea>
+
+    <br><br>
+
+    <label for="patientid">Patient ID:</label>
+    <input type="text" id="patientid" name="patientid"
+           maxlength="20">
+
+    <br><br>
+
+    <input type="checkbox" id="terms" name="terms" value="accepted" required>
+    <label for="terms">
+        I accept the appointment terms.
+    </label>
+
+    <br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+
+<h2>Clinic Timings</h2>
+
+<table border="1">
+    <tr>
+        <th>Day</th>
+        <th>Timing</th>
+    </tr>
+    <tr>
+        <td>Monday - Friday</td>
+        <td>9:00 AM - 6:00 PM</td>
+    </tr>
+    <tr>
+        <td>Saturday</td>
+        <td>9:00 AM - 2:00 PM</td>
+    </tr>
+</table>
+
+<p>
+    For clinic contact or emergency assistance,
+    <a href="https://www.shalby.org/">Contact Emergency</a>
+</p>
+
+</body>
+</html>
