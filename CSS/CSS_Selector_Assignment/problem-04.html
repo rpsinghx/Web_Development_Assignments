@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Periodic Table of Elements</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: 400;
+      font-size: 20px;
+      color: #333333;
+      margin-bottom: 20px;
+    }
+
+    /* main table */
+    table {
+      margin: 0 auto;
+      border-collapse: separate;
+      border-spacing: 9px;
+    }
+
+    td {
+      width: 29px;
+      height: 29px;
+      padding: 0;
+      text-align: center;
+      font-size: 9px;
+      color: #222222;
+    }
+
+    /* grouping selector - all coloured boxes get a border */
+    .dark-red, .olive, .red, .blue, .orange, .purple, .green, .pink, .yellow, .brown, .peach {
+      border: 1px solid #333333;
+    }
+
+    .dark-red {
+      background-color: #a00000;
+      color: #ffffff;
+      font-size: 14px;
+    }
+
+    .olive   { background-color: #899f25; }
+    .red     { background-color: #ff5555; }
+    .blue    { background-color: #0000ff; }
+    .orange  { background-color: #ff6600; }
+    .purple  { background-color: #aa0088; }
+    .green   { background-color: #5ba02a; }
+    .pink    { background-color: #ff0066; }
+    .yellow  { background-color: #ffcc00; }
+    .brown   { background-color: #6b5058; }
+
+    .peach {
+      background-color: #ffe2d2;
+      border: 3px solid #000000;
+    }
+
+    /* silicon highlighted box */
+    #silicon {
+      background-color: #899f25;
+      border: 1px solid #333333;
+      text-align: left;
+      vertical-align: top;
+      padding: 6px;
+    }
+
+    .atomic-number {
+      text-align: right;
+      font-size: 9px;
+    }
+
+    .symbol {
+      font-size: 38px;
+      line-height: 40px;
+      margin-top: 4px;
+    }
+
+    .name {
+      font-size: 8px;
+      margin-top: 22px;
+    }
+
+    /* lanthanides and actinides */
+    #lanthanides {
+      margin: 20px auto 0 auto;
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+
+    #lanthanides td {
+      width: 24px;
+      height: 24px;
+      border: 1px solid #3a4a1c;
+      font-size: 8px;
+      text-align: left;
+      padding: 1px 2px;
+    }
+
+    .la-row td {
+      background-color: #4a5a28;
+      color: #e5e5e5;
+      vertical-align: top;
+    }
+
+    .ac-row td {
+      background-color: #92b85b;
+      color: #222222;
+      vertical-align: bottom;
+    }
+
+    #lanthanides td.right {
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <h1>THE PERIODIC TABLE OF ELEMENTS</h1>
+
+  <table>
+    <!-- row 1 -->
+    <tr>
+      <td class="dark-red">H</td>
+      <td></td>
+      <td></td>
+      <td id="silicon" colspan="3" rowspan="3">
+        <div class="atomic-number">14</div>
+        <div class="symbol">Si</div>
+        <div class="name">Silicon</div>
+      </td>
+      <td></td><td></td><td></td><td></td><td></td><td></td>
+      <td></td><td></td><td></td><td></td><td></td>
+      <td class="yellow"></td>
+    </tr>
+
+    <!-- row 2 -->
+    <tr>
+      <td class="olive"></td>
+      <td class="red">4</td>
+      <td></td>
+      <td></td><td></td><td></td><td></td><td></td><td></td>
+      <td class="purple"></td>
+      <td class="green"></td>
+      <td class="green"></td>
+      <td class="green"></td>
+      <td class="pink"></td>
+      <td class="yellow"></td>
+    </tr>
+
+    <!-- row 3 -->
+    <tr>
+      <td class="olive"></td>
+      <td class="red">12</td>
+      <td></td>
+      <td></td><td></td><td></td><td></td><td></td><td></td>
+      <td class="orange"></td>
+      <td class="purple"></td>
+      <td class="green"></td>
+      <td class="green"></td>
+      <td class="pink"></td>
+      <td class="yellow"></td>
+    </tr>
+
+    <!-- row 4 -->
+    <tr>
+      <td class="olive"></td>
+      <td class="red">20</td>
+      <td></td>
+      <td class="blue"></td><td class="blue"></td><td class="blue"></td>
+      <td class="blue"></td><td class="blue"></td><td class="blue"></td>
+      <td class="blue"></td><td class="blue"></td><td class="blue"></td>
+      <td class="orange"></td>
+      <td class="purple"></td>
+      <td class="purple"></td>
+      <td class="green"></td>
+      <td class="pink"></td>
+      <td class="yellow"></td>
+    </tr>
+
+    <!-- row 5 -->
+    <tr>
+      <td class="olive"></td>
+      <td class="red">38</td>
+      <td></td>
+      <td class="blue"></td><td class="blue"></td><td class="blue"></td>
+      <td class="blue"></td><td class="blue"></td><td class="blue"></td>
+      <td class="blue"></td><td class="blue"></td><td class="blue"></td>
+      <td class="orange"></td>
+      <td class="orange"></td>
+      <td class="purple"></td>
+      <td class="purple"></td>
+      <td class="pink"></td>
+      <td class="yellow"></td>
+    </tr>
+
+    <!-- row 6 -->
+    <tr>
+      <td class="olive"></td>
+      <td class="red">56</td>
+      <td class="peach"></td>
+      <td class="blue"></td><td class="blue"></td><td class="blue"></td>
+      <td class="blue"></td><td class="blue"></td><td class="blue"></td>
+      <td class="blue"></td><td class="blue"></td><td class="blue"></td>
+      <td class="orange"></td>
+      <td class="orange"></td>
+      <td class="orange"></td>
+      <td class="purple"></td>
+      <td class="pink"></td>
+      <td class="yellow"></td>
+    </tr>
+
+    <!-- row 7 -->
+    <tr>
+      <td class="olive"></td>
+      <td class="red">88</td>
+      <td class="peach"></td>
+      <td class="blue"></td><td class="blue"></td><td class="blue"></td>
+      <td class="blue"></td><td class="blue"></td><td class="blue"></td>
+      <td class="blue"></td><td class="blue"></td><td class="blue"></td>
+      <td class="brown"></td><td class="brown"></td><td class="brown"></td>
+      <td class="brown"></td><td class="brown"></td><td class="brown"></td>
+    </tr>
+  </table>
+
+  <!-- lanthanides and actinides -->
+  <table id="lanthanides">
+    <tr class="la-row">
+      <td>La</td><td></td><td></td><td></td><td></td><td></td><td></td>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr class="ac-row">
+      <td></td><td></td><td></td><td></td><td></td><td></td><td>Am</td>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td class="right">No</td>
+    </tr>
+  </table>
+</body>
+</html>
