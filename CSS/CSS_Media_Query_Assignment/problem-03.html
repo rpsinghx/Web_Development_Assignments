@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problem 3</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 20px;
+    }
+
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .wrapper > div {
+      padding: 8px;
+      color: #444;
+    }
+
+    .nav {
+      background-color: #f5ff00;
+      color: #000;
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    /* large screen - side by side */
+    .left-box {
+      float: left;
+      width: 48%;
+      height: 300px;
+      background-color: #ff0000;
+    }
+
+    .right-box {
+      float: right;
+      width: 48%;
+      height: 300px;
+      background-color: #00ff2a;
+    }
+
+    /* small screen - stacked */
+    @media (max-width: 767px) {
+      .nav {
+        font-size: 38px;
+        padding: 15px 15px;
+      }
+
+      .left-box,
+      .right-box {
+        float: none;
+        width: 100%;
+        height: 220px;
+        font-size: 28px;
+      }
+
+      .left-box {
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="nav">Navigation</div>
+    <div class="left-box">LEFT BOX</div>
+    <div class="right-box">RIGHT BOX</div>
+  </div>
+</body>
+</html>

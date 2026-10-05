@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problem 5 - Our Investors</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background-color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header h1 {
+      font-size: 42px;
+    }
+
+    header h2 {
+      font-size: 22px;
+      font-weight: 400;
+      margin-top: 12px;
+      color: #555;
+    }
+
+    header h3 {
+      font-size: 28px;
+      margin: 40px 0 15px;
+    }
+
+    header p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px 20px 60px;
+    }
+
+    main > h3 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+
+    /* top investor logos */
+    .logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .logos img {
+      height: 50px;
+    }
+
+    /* people cards - large screen 4 per row */
+    .investors {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+    }
+
+    .investors > div {
+      text-align: center;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    .investors > div > img:first-child {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .investors h4 {
+      font-size: 17px;
+      margin-top: 14px;
+    }
+
+    .investors p {
+      font-size: 13px;
+      color: #666;
+      margin: 6px 0 14px;
+    }
+
+    .investors > div > img:last-child {
+      height: 30px;
+      max-width: 100%;
+    }
+
+    @media (max-width: 991px) {
+      .investors {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      header h1 {
+        font-size: 36px;
+      }
+    }
+
+    @media (max-width: 599px) {
+      .investors {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        padding-top: 40px;
+      }
+
+      header h1 {
+        font-size: 30px;
+      }
+
+      header h2 {
+        font-size: 18px;
+      }
+
+      .logos {
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Investors</h1>
+    <h2>When outcomes drive you, the industry stands with you.</h2>
+    <h3>The stalwarts of tech industry by our side</h3>
+    <p>It is not easy to find the right talent for engineering teams in the Indian technology ecosystem even at an entry-level, and it is a problem that impacts the best of the best organisations. While Masai School is an outcome-driven higher education institution, we still need the industry to come together and support an alternative education system such as ours. Now, the time has finally come for the technology industry to come together and invest in its own engineering talent.</p>
+    <p>Cohort-based courses are proving to be yielding quality engineering talent with industry-level skills better than any degrees. Today, we are backed by the most seasoned founders, CXOs and experts of the technology industry in India.</p>
+  </header>
+
+  <main>
+    <h3>Board Members</h3>
+
+    <div class="logos">
+      <img src="https://cdn.masaischool.com/masai-website/india_q_borderless_22288e7ee3.svg" alt="investor">
+      <img src="https://cdn.masaischool.com/masai-website/omidyar_borderless_02412f1dfd.svg" alt="investor">
+      <img src="https://cdn.masaischool.com/general/ezgif.com-svg-to-png-converter__17_.png-1780654976925-1780654977350.png" alt="investor">
+    </div>
+
+    <section class="investors">
+      <div>
+        <img src="https://cdn.masaischool.com/masai-website/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" alt="Vijay Shekhar Sharma">
+        <h4>Vijay Shekhar Sharma</h4>
+        <p>Founder & CEO</p>
+        <img src="https://cdn.masaischool.com/general/ezgif.com-svg-to-png-converter__18_.png-1780655021899-1780655022192.png" alt="Paytm">
+      </div>
+      <div>
+        <img src="https://cdn.masaischool.com/masai-website/Rectangle_427_637d69bb57.png" alt="Kunal Shah">
+        <h4>Kunal Shah</h4>
+        <p>Founder</p>
+        <img src="https://cdn.masaischool.com/masai-website/cred_0a47d7b4f8.png" alt="CRED">
+      </div>
+      <div>
+        <img src="https://cdn.masaischool.com/masai-website/amrish_rau_pine_labs_144e5e587c.jpg" alt="Amrish Rau">
+        <h4>Amrish Rau</h4>
+        <p>CEO</p>
+        <img src="https://cdn.masaischool.com/masai-website/pine_labs_0aa2407434.png" alt="Pine Labs">
+      </div>
+      <div>
+        <img src="https://cdn.masaischool.com/masai-website/Sampad_swain_Instamojo_f12bf6341e.jpg" alt="Sampad Swain">
+        <h4>Sampad Swain</h4>
+        <p>Co-Founder & CEO</p>
+        <img src="https://cdn.masaischool.com/masai-website/instamojo_8763e704f7.png" alt="Instamojo">
+      </div>
+      <div>
+        <img src="https://cdn.masaischool.com/masai-website/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg" alt="Ankush Sachdeva">
+        <h4>Ankush Sachdeva</h4>
+        <p>Co-Founder & CEO</p>
+        <img src="https://cdn.masaischool.com/general/ezgif.com-svg-to-png-converter__19_.png-1780655069178-1780655069511.png" alt="ShareChat">
+      </div>
+      <div>
+        <img src="https://cdn.masaischool.com/masai-website/bhanu_pratap_singh_sharechat_11fdd7b47a.jpg" alt="Bhanu Pratap Singh">
+        <h4>Bhanu Pratap Singh</h4>
+        <p>Co-Founder & CTO</p>
+        <img src="https://cdn.masaischool.com/general/ezgif.com-svg-to-png-converter__19_.png-1780655069178-1780655069511.png" alt="ShareChat">
+      </div>
+      <div>
+        <img src="https://cdn.masaischool.com/masai-website/farid_ahsan_sharechat_1251f28141.png" alt="Farid Ahsan">
+        <h4>Farid Ahsan</h4>
+        <p>Co-Founder & COO</p>
+        <img src="https://cdn.masaischool.com/general/ezgif.com-svg-to-png-converter__19_.png-1780655069178-1780655069511.png" alt="ShareChat">
+      </div>
+      <div>
+        <img src="https://cdn.masaischool.com/masai-website/Amit_Kumar_Agarwal_Nobroker_a8a279ad91.jpg" alt="Amit Kumar Agarwal">
+        <h4>Amit Kumar Agarwal</h4>
+        <p>Founder & CEO</p>
+        <img src="https://cdn.masaischool.com/general/ezgif.com-svg-to-png-converter__20_.png-1780655158418-1780655158774.png" alt="NoBroker">
+      </div>
+      <div>
+        <img src="https://cdn.masaischool.com/masai-website/Akhil_Gupta_Nobroker_539cd97f6c.jpg" alt="Akhil Gupta">
+        <h4>Akhil Gupta</h4>
+        <p>Founder & CTO</p>
+        <img src="https://cdn.masaischool.com/general/ezgif.com-svg-to-png-converter__20_.png-1780655158418-1780655158774.png" alt="NoBroker">
+      </div>
+      <div>
+        <img src="https://cdn.masaischool.com/masai-website/saurbh_garg_nobroker_c0c71cc431.jpeg" alt="Saurabh Garg">
+        <h4>Saurabh Garg</h4>
+        <p>Co-Founder & CBO</p>
+        <img src="https://cdn.masaischool.com/general/ezgif.com-svg-to-png-converter__20_.png-1780655158418-1780655158774.png" alt="NoBroker">
+      </div>
+      <div>
+        <img src="https://cdn.masaischool.com/masai-website/Vipin_Pathak_Care24_acd02cd173.jpg" alt="Vipin Pathak">
+        <h4>Vipin Pathak</h4>
+        <p>Co-Founder & CEO</p>
+        <img src="https://cdn.masaischool.com/masai-website/care24_1164f7a2cd.png" alt="Care24">
+      </div>
+      <div>
+        <img src="https://cdn.masaischool.com/masai-website/Ramakant_Sharma_livespace_0308e3627d.jpg" alt="Ramakant Sharma">
+        <h4>Ramakant Sharma</h4>
+        <p>Founder</p>
+        <img src="https://cdn.masaischool.com/masai-website/livspace_f9318b2e8d.png" alt="LivSpace">
+      </div>
+      <div>
+        <img src="https://cdn.masaischool.com/masai-website/Mohit_Tandon_Delhivery_b43fee16c4.jpg" alt="Mohit Tandon">
+        <h4>Mohit Tandon</h4>
+        <p>Co-Founder</p>
+        <img src="https://cdn.masaischool.com/masai-website/delhivery_17e85a76ed.png" alt="Delhivery">
+      </div>
+      <div>
+        <img src="https://cdn.masaischool.com/masai-website/Abhishek_Goyal_tracxn_5b2f61d87d.jpg" alt="Abhishek Goyal">
+        <h4>Abhishek Goyal</h4>
+        <p>Co-Founder</p>
+        <img src="https://cdn.masaischool.com/general/ezgif.com-svg-to-png-converter__21_.png-1780655404780-1780655405084.png" alt="Tracxn">
+      </div>
+      <div>
+        <img src="https://cdn.masaischool.com/masai-website/Anurag_Jain_Kredx_b6ed6a31c6.jpg" alt="Anurag Jain">
+        <h4>Anurag Jain</h4>
+        <p>Founder & Executive Director</p>
+        <img src="https://cdn.masaischool.com/general/ezgif.com-svg-to-png-converter__22_.png-1780655453138-1780655453508.png" alt="KredX">
+      </div>
+      <div>
+        <img src="https://cdn.masaischool.com/masai-website/Harshvardhan_Lunia_Lendingkart_44d72a6fcd.jpg" alt="Harshvardhan Lunia">
+        <h4>Harshvardhan Lunia</h4>
+        <p>Co-Founder & CEO</p>
+        <img src="https://cdn.masaischool.com/general/ezgif.com-svg-to-png-converter__23_.png-1780655506314-1780655506596.png" alt="LendingKart">
+      </div>
+      <div>
+        <img src="https://cdn.masaischool.com/masai-website/sunil_rao_amazon_dfd2daa06d.jpeg" alt="Sunil Rao">
+        <h4>Sunil Rao</h4>
+        <p>Country Head Strategy and Corporate Business Development</p>
+        <img src="https://cdn.masaischool.com/general/ezgif.com-svg-to-png-converter__24_.png-1780655565821-1780655566148.png" alt="Amazon">
+      </div>
+      <div>
+        <img src="https://cdn.masaischool.com/masai-website/Sharda_Balaji_Novojuris_2a206f2f88.jpg" alt="Sharda Balaji">
+        <h4>Sharda Balaji</h4>
+        <p>Founder</p>
+        <img src="https://cdn.masaischool.com/general/ezgif.com-svg-to-png-converter__25_.png-1780655632820-1780655633152.png" alt="NovoJuris Legal">
+      </div>
+      <div>
+        <img src="https://cdn.masaischool.com/masai-website/Kulin_Shah_Onsurity_0dd3a1802f.jpg" alt="Kulin Shah">
+        <h4>Kulin Shah</h4>
+        <p>Co-Founder</p>
+        <img src="https://cdn.masaischool.com/masai-website/onsurity_5500f1c3b1.png" alt="Onsurity">
+      </div>
+    </section>
+  </main>
+</body>
+</html>

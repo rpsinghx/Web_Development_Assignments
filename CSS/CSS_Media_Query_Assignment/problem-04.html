@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Problem 4</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* large screen - default */
+    .container {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: 50px repeat(3, 110px);
+      grid-template-areas:
+        "nav nav"
+        "left right1"
+        "left right2"
+        "left right3";
+      gap: 12px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .container > div {
+      padding: 8px;
+      color: #444;
+      font-size: 14px;
+    }
+
+    .nav {
+      grid-area: nav;
+      background-color: #f5ff00;
+      color: #000;
+      font-size: 26px;
+    }
+
+    .left {
+      grid-area: left;
+      background-color: #ff0000;
+    }
+
+    .right1 {
+      grid-area: right1;
+      background-color: #00ff2a;
+    }
+
+    .right2 {
+      grid-area: right2;
+      background-color: #00ff2a;
+    }
+
+    .right3 {
+      grid-area: right3;
+      background-color: #00ff2a;
+    }
+
+    /* medium screen */
+    @media (max-width: 991px) {
+      .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50px 250px 110px;
+        grid-template-areas:
+          "nav nav nav"
+          "left left left"
+          "right1 right2 right3";
+      }
+    }
+
+    /* small screen */
+    @media (max-width: 599px) {
+      .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 200px repeat(3, 120px);
+        grid-template-areas:
+          "nav"
+          "left"
+          "right1"
+          "right2"
+          "right3";
+      }
+
+      .container > div {
+        font-size: 24px;
+      }
+
+      .nav {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav">Navigation</div>
+    <div class="left">LEFT BOX</div>
+    <div class="right1">RIGHT BOX 1</div>
+    <div class="right2">RIGHT BOX 2</div>
+    <div class="right3">RIGHT BOX 3</div>
+  </div>
+</body>
+</html>
