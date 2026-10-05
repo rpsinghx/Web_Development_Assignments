@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Problem 6 - Calculator</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f2f2f2;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .calculator {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      width: 420px;
+      padding: 60px;
+      background-color: #fff;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    }
+
+    .calculator > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+      background-color: #fafafa;
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
+      font-family: "Times New Roman", serif;
+      font-weight: bold;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    /* display box takes the full first row */
+    .calculator > div:first-child {
+      grid-column: 1 / -1;
+      height: 70px;
+      margin-bottom: 15px;
+      cursor: default;
+    }
+
+    .operator {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .clear {
+      background-color: #9f3838;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div></div>
+
+    <div>1</div><div>2</div><div>3</div><div class="operator">+</div>
+    <div>4</div><div>5</div><div>6</div><div class="operator">-</div>
+    <div>7</div><div>8</div><div>9</div><div class="operator">x</div>
+    <div class="clear">C</div><div>0</div><div class="operator">=</div><div class="operator">/</div>
+  </div>
+</body>
+</html>

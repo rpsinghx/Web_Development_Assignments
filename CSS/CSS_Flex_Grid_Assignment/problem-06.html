@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Problem 3</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 30px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 100px 100px 20px;
+      grid-template-areas:
+        "a a b e"
+        "c d b e"
+        ". . . e";
+      gap: 15px;
+      max-width: 660px;
+      margin: 0 auto;
+    }
+
+    .container > div {
+      background-color: #424242;
+      color: #fff;
+      font-family: "Times New Roman", serif;
+      font-size: 32px;
+      padding: 20px 25px;
+      border-radius: 6px;
+    }
+
+    .a { grid-area: a; }
+    .b { grid-area: b; }
+    .c { grid-area: c; }
+    .d { grid-area: d; }
+    .e { grid-area: e; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="a">A</div>
+    <div class="b">B</div>
+    <div class="c">C</div>
+    <div class="d">D</div>
+    <div class="e">E</div>
+  </div>
+</body>
+</html>

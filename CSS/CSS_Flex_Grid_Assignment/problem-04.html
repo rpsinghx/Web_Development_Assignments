@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Problem 1 - Hiring Partners</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #fdf7f6;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    h4 {
+      font-size: 12px;
+      color: #555;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .partners {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto 25px;
+    }
+
+    .partners > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 65px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px;
+      font-size: 10px;
+      font-weight: 700;
+      color: #333;
+    }
+
+    button {
+      background-color: #fff;
+      color: #e0245e;
+      border: 1px solid #e0245e;
+      border-radius: 5px;
+      padding: 6px 14px;
+      font-size: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    @media (max-width: 799px) {
+      .partners {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h4>Have a Dream Company In Mind?</h4>
+  <h2>Meet Our 700+ Hiring Partners</h2>
+
+  <section class="partners">
+    <div>EATFIT</div>
+    <div>DREAM11</div>
+    <div>URBAN PIPER</div>
+    <div>Airmeet</div>
+    <div>Paytm</div>
+    <div>Whitehat Jr</div>
+    <div>BharatPe</div>
+    <div>SWIGGY</div>
+    <div>Vyapar</div>
+    <div>PagarBook</div>
+    <div>smallcase</div>
+    <div>ShareChat</div>
+    <div>OLA</div>
+    <div>IBM</div>
+    <div>BYJU'S</div>
+    <div>AJIO</div>
+  </section>
+
+  <button>SEE MORE PARTNERS &gt;</button>
+</body>
+</html>

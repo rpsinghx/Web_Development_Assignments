@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Flex Problem 1 - GLA In The News</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    h2 span {
+      color: #123c7a;
+    }
+
+    /* news section */
+    .news {
+      background-color: #eef4fa;
+      padding: 30px 20px 35px;
+    }
+
+    .news-cards {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      max-width: 960px;
+      margin: 25px auto;
+    }
+
+    .news-cards > div {
+      flex: 1;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 25px 20px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    .news-cards h3 {
+      height: 110px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+    }
+
+    .news-cards > div:nth-child(1) h3 {
+      font-family: "Times New Roman", serif;
+      font-weight: 400;
+      font-size: 22px;
+    }
+
+    .news-cards > div:nth-child(2) h3 {
+      color: #fff;
+      background-color: #1b6fb8;
+      border-radius: 6px;
+      height: 50px;
+      margin: 30px 0;
+      font-size: 22px;
+    }
+
+    .news-cards > div:nth-child(3) h3 {
+      font-size: 34px;
+      letter-spacing: -1px;
+    }
+
+    .news-cards small {
+      color: #1a5fe0;
+      font-size: 10px;
+    }
+
+    .news-cards h4 {
+      font-size: 12px;
+      margin: 8px 0;
+      line-height: 1.5;
+    }
+
+    .news-cards p {
+      font-size: 10px;
+      color: #777;
+      line-height: 1.6;
+    }
+
+    .news > div:last-child {
+      display: flex;
+      justify-content: center;
+    }
+
+    .news button,
+    .investors button {
+      background-color: #fff;
+      color: #e0245e;
+      border: 1px solid #e0245e;
+      border-radius: 5px;
+      padding: 7px 16px;
+      font-size: 9px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    /* investors section */
+    .investors {
+      padding: 30px 20px 40px;
+      background-color: #fafafa;
+    }
+
+    .investors-logos {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      max-width: 960px;
+      margin: 20px auto 0;
+    }
+
+    .investors-logos > div {
+      flex: 1;
+      height: 75px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fff;
+    }
+
+    .investors-logos img {
+      height: 40px;
+      max-width: 70%;
+      object-fit: contain;
+    }
+
+    /* responsive */
+    @media (max-width: 767px) {
+      .news-cards,
+      .investors-logos {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="news">
+    <h2><span>GLA</span> In The News</h2>
+
+    <div class="news-cards">
+      <div>
+        <h3>The Economic Times</h3>
+        <small>21 Dec 2021</small>
+        <h4>Edtech startup GLA University acquires data analytics firm Prepleaf for $1 million.</h4>
+        <p>With their latest acquisition, GLA University moves one step closer to becoming...</p>
+      </div>
+      <div>
+        <h3>moneycontrol</h3>
+        <small>26 Oct 2021</small>
+        <h4>Kunal Shah, Vijay Shekhar Sharma, Amrish Rau among 21 angel investors in GLA University</h4>
+        <p>GLA University is aiming to expand to 20 smaller cities by March 2022 and...</p>
+      </div>
+      <div>
+        <h3>VCCiRCLE</h3>
+        <small>18 Aug 2020</small>
+        <h4>Unitus Ventures leads pre-Series A funding for coding-focussed GLA University</h4>
+        <p>Software coding platform GLA University has raised $2.5 million (Rs 18.6 crore) in...</p>
+      </div>
+    </div>
+
+    <div>
+      <button>SEE MORE &gt;</button>
+    </div>
+  </section>
+
+  <section class="investors">
+    <h2>Our Investors, Who Believe In Us</h2>
+
+    <div class="investors-logos">
+      <div><img src="https://cdn.masaischool.com/general/ezgif.com-svg-to-png-converter__17_.png-1780654976925-1780654977350.png" alt="unitus ventures"></div>
+      <div><img src="https://cdn.masaischool.com/masai-website/omidyar_borderless_02412f1dfd.svg" alt="omidyar network india"></div>
+      <div><img src="https://cdn.masaischool.com/masai-website/india_q_borderless_22288e7ee3.svg" alt="india quotient"></div>
+    </div>
+  </section>
+</body>
+</html>
